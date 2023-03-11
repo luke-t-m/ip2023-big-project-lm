@@ -11,6 +11,52 @@
 </head>
 
 <body>
+    <div class = "app">
+        <div class = "toolbar">
+            <a id="file">File</a>
+            <a id="edit">Edit</a>
+            <a id="view">View</a>
+            <a id="image">Image</a>
+            <a id="options">Options</a>
+            <a id="help">Help</a>
+
+        </div>
+
+        <div class = "canvas_wrapper">
+            <div class = "toolbox">
+                <a class = "not_selected" id="freeform"><img src="images/toolbox/freeform.png"></a>
+                <a class = "not_selected" id="select"><img src="images/toolbox/select.png"></a>
+                <a class = "not_selected" id="eraser" onclick ="selectTool('eraser')"><img src="images/toolbox/eraser.png"></a>
+                <a class = "not_selected" id="bucket"><img src="images/toolbox/bucket.png"></a>
+                <a class = "not_selected" id="picker"><img src="images/toolbox/picker.png"></a>
+                <a class = "not_selected" id="magnify"><img src="images/toolbox/magnify.png"></a>
+                <a class = "not_selected" id="pencil" onclick ="selectTool('pencil')"><img src="images/toolbox/pencil.png"></a>
+                <a class = "not_selected" id="brush" onclick ="selectTool('brush')"><img src="images/toolbox/brush.png"></a>
+                <a class = "not_selected" id="spray"><img src="images/toolbox/spray.png"></a>
+                <a class = "not_selected" id="text"><img src="images/toolbox/text.png"></a>
+                <a class = "not_selected" id="line"><img src="images/toolbox/line.png"></a>
+                <a class = "not_selected" id="curve"><img src="images/toolbox/curve.png"></a>
+                <a class = "not_selected" id="rectangle"><img src="images/toolbox/rectangle.png"></a>
+                <a class = "not_selected" id="polygon"><img src="images/toolbox/polygon.png"></a>
+                <a class = "not_selected" id="ellipse"><img src="images/toolbox/ellipse.png"></a>
+                <a class = "not_selected" id="rounded_rectangle"><img src="images/toolbox/rounded_rectangle.png"></a>
+
+            </div>
+
+            <div class = "canvas">
+                <canvas id="canvas">
+
+                </canvas>
+
+            </div>
+
+        </div>
+
+        <div class = "colour_palette">
+
+        </div>
+
+    </div>
 </body>
 
 </html>

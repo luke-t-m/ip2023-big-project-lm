@@ -6,3 +6,68 @@ body {
     cursor: pointer;
     background-color: #c8c4c4;
 }
+
+.toolbar {
+    border: 1px solid black;
+    padding: 2px;
+    background-color: #c8c4c4;
+}
+
+.toolbar a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 1px solid black;
+}
+
+.toolbar a:hover {
+    border-right: 1px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.toolbox {
+    border: 1px solid black;
+    border-color: #000000;
+    width: 50px;
+    height: max-content;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+
+.selected {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7) 1px, transparent 0);
+    background-size: 3px 3px;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-top: 2px solid rgba(0, 0, 0, 0.95);
+    border-left: 2px solid rgba(0, 0, 0, 0.95);
+    
+}
+
+.not_selected {
+    padding: 2px;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#canvas {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 600px
+
+}
+
+.canvas_wrapper {
+    display: flex;
+
+}
